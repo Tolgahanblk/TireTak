@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E96D8837-6D5D-48BF-BFDE-BDC085C41C00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TireTak</RootNamespace>
+    <AssemblyName>TireTak</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\MainClass.cs" />
+    <Compile Include="Class\TiresClass.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProducts.Designer.cs">
+      <DependentUpon>FormProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductsTire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductsTire.Designer.cs">
+      <DependentUpon>FormProductsTire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductsWheel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductsWheel.Designer.cs">
+      <DependentUpon>FormProductsWheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSales.Designer.cs">
+      <DependentUpon>FormSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTireBrandAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTireBrandAdd.Designer.cs">
+      <DependentUpon>FormTireBrandAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTireModelAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTireModelAdd.Designer.cs">
+      <DependentUpon>FormTireModelAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTireRAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTireRAdd.Designer.cs">
+      <DependentUpon>FormTireRAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTires.Designer.cs">
+      <DependentUpon>FormTires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTireSizeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTireSizeAdd.Designer.cs">
+      <DependentUpon>FormTireSizeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWheelBrandAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWheelBrandAdd.Designer.cs">
+      <DependentUpon>FormWheelBrandAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWheelModelAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWheelModelAdd.Designer.cs">
+      <DependentUpon>FormWheelModelAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWheelRAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWheelRAdd.Designer.cs">
+      <DependentUpon>FormWheelRAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWheels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWheels.Designer.cs">
+      <DependentUpon>FormWheels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWheelSizeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWheelSizeAdd.Designer.cs">
+      <DependentUpon>FormWheelSizeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProducts.resx">
+      <DependentUpon>FormProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductsTire.resx">
+      <DependentUpon>FormProductsTire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductsWheel.resx">
+      <DependentUpon>FormProductsWheel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSales.resx">
+      <DependentUpon>FormSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTireBrandAdd.resx">
+      <DependentUpon>FormTireBrandAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTireModelAdd.resx">
+      <DependentUpon>FormTireModelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTireRAdd.resx">
+      <DependentUpon>FormTireRAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTires.resx">
+      <DependentUpon>FormTires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTireSizeAdd.resx">
+      <DependentUpon>FormTireSizeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWheelBrandAdd.resx">
+      <DependentUpon>FormWheelBrandAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWheelModelAdd.resx">
+      <DependentUpon>FormWheelModelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWheelRAdd.resx">
+      <DependentUpon>FormWheelRAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWheels.resx">
+      <DependentUpon>FormWheels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWheelSizeAdd.resx">
+      <DependentUpon>FormWheelSizeAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\Background %282%29.jpg" />
+    <Content Include="Images\Background.jpg" />
+    <Content Include="Images\bckgrnd.jpg" />
+    <Content Include="Images\blk.PNG" />
+    <Content Include="Images\exit.png" />
+    <Content Include="Images\exit2.png" />
+    <Content Include="Images\product.png" />
+    <Content Include="Images\sales.png" />
+    <Content Include="Images\tire_login.png" />
+    <Content Include="Images\wheeel.png" />
+    <Content Include="Images\wheel.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
